@@ -27,9 +27,7 @@ public class ClickBlockListener implements Listener {
 
         if (!(event.getAction().equals(Action.RIGHT_CLICK_BLOCK))) return;
 
-        if (event.getHand() != EquipmentSlot.HAND) return;
-
-        System.out.println(event.getAction().name());
+        if (event.getHand() != EquipmentSlot.HAND) {
 
         Player player = event.getPlayer();
 
